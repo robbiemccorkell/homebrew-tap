@@ -5,16 +5,16 @@ class Hurl < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-aarch64-apple-darwin.tar.xz"
-      sha256 "9ff1dbb2f0d382100750a658fa407255265253a0f113b51b788f734d12535355"
+      sha256 "51707256c0755df0d17551629dac0b9d4f740955d9e7a3b02d345bde1c8d0856"
     end
     if Hardware::CPU.intel?
       url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-x86_64-apple-darwin.tar.xz"
-      sha256 "47fc8f62b9fae401e74e7e2b076d93b12d21dedc37ebc9a555627ffd468ebfe8"
+      sha256 "5f485e5b7d502d81f0bbe6bd8146cc3c61d2ff46bf6b33dad5d10de15c5de137"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
       url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f11270870772507816003eece3185e3a87b63aa46990030a49276f246dc1632a"
+      sha256 "3df68b4a92abf6e1c3ca9990826164ba23fcbfd5c9f66601d4c24cbfed410bec"
   end
 
   BINARY_ALIASES = {
