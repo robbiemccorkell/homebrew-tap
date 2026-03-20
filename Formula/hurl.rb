@@ -1,20 +1,20 @@
 class Hurl < Formula
   desc "A terminal UI API client for humans"
   homepage "https://github.com/robbiemccorkell/hurl"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-aarch64-apple-darwin.tar.xz"
-      sha256 "51707256c0755df0d17551629dac0b9d4f740955d9e7a3b02d345bde1c8d0856"
+      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.1/hurl-aarch64-apple-darwin.tar.xz"
+      sha256 "69a2b9318987c0839e123ade5577d2f707de0a16459749e640bc22381e408267"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-x86_64-apple-darwin.tar.xz"
-      sha256 "5f485e5b7d502d81f0bbe6bd8146cc3c61d2ff46bf6b33dad5d10de15c5de137"
+      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.1/hurl-x86_64-apple-darwin.tar.xz"
+      sha256 "1642c8f85dd036aae16aee95dc046b22608b5496b0b4927031470d81d8a2bbb7"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.0/hurl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3df68b4a92abf6e1c3ca9990826164ba23fcbfd5c9f66601d4c24cbfed410bec"
+      url "https://github.com/robbiemccorkell/hurl/releases/download/v0.1.1/hurl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "90113b09880630857999040b3af75a4bec5c144b1fa950c93c884647a4544a16"
   end
 
   BINARY_ALIASES = {
